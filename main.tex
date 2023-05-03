@@ -58,7 +58,7 @@
 }
 
 \newcommand{\header}[1]{{
-\hspace*{-15pt}\vspace*{6pt} \Large \scshape{#1}} \vspace*{-6pt} 
+\hspace*{-15pt}\vspace*{10pt} \large \scshape{#1}} \vspace*{-6pt} 
 \lineunder
 }
 
@@ -104,7 +104,7 @@ $\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
 
 \newenvironment{bullet-list-minor}{
 \begin{list}{\labelitemii}{\setlength\leftmargin{15pt} 
-\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}\end{list}
+\topsep 0pt \itemsep 1pt}}{\vspace*{4pt}\end{list}
 }
 
 
@@ -127,60 +127,63 @@ $\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
 \bigskip
 \smallskip
 
-\header{Education}
-    \vspace{6pt}
-    \school{University of Maryland, College Park}{}{August 2018 -- May 2022}{\vspace{4pt}  B.S. in Computer Science with Business Analytics Minor \labelitemi Magna Cum Laude}
-\bigskip
-\medskip
-
-\header{Technical Skills}
-    \vspace{6pt}
-    \textbf{Programming Languages}: \hspace{3pt} \cvtag{Java}\hspace{3pt}\cvtag{Python}\hspace{3pt}\cvtag{C}\hspace{3pt}\cvtag{HTML}\cvtag{CSS}\hspace{3pt}\cvtag{JavaScript}\\
-    \vspace{4pt}
-    \textbf{Technologies}: \hspace{3pt} \cvtag{Amazon Web Services}\hspace{3pt}\cvtag{Node.js}\hspace{3pt}\cvtag{Git}\hspace{3pt}\cvtag{Flask}\hspace{3pt}\cvtag{Keras}\hspace{3pt}\cvtag{Pandas}\hspace{3pt}\cvtag{Mockito}\hspace{3pt}\cvtag{React}\hspace{3pt}\cvtag{jQuery}
-    
-\smallskip
-\bigskip
-\medskip
-
 \header{Experience}
-    \vspace{6pt}
-    \employer{Software Engineer}{Amazon}{August 2022 -- PRESENT}{}
-    \smallskip
+    \vspace{4pt}
+    \employer{Software Engineer I}{Amazon}{August 2022 -- PRESENT}{}
 	\begin{bullet-list-minor}
-	    \item Working on the Items and Offers Platform as a part of the Catalog Relationships Pipeline team
+        \item Engineered a Java API service hosted on AWS to enrich seller product submissions involving multiple package hierarchies
+        \item Implemented comprehensive metrics reporting and error handling, and built/integrated clients for downstream system dependencies, resulting in a highly available service monitored in real-time and easily troubleshooted using AWS CloudWatch
+        \item Wrote integration tests to verify correctness and executed load tests to verify the performance and TPS limits of the service
+        \item Authored comprehensive documentation, runbooks, test and launch strategies, and dashboards for the team's new API, enabling 5+ engineers to onboard quickly and collaborate effectively on the project with minimal friction
+        \item Assisted in code reviews and design reviews across multiple teams to ensure code correctness, maintainability, and readability
+        \item Designed and developed validator to protect 1,000+ item families and create curated detail pages for high-value Amazon sellers
+        \item Performed on-call duties, involving conducting root causes analyses and responding to customer issues to reduce impact of bugs
+        \item Led the team's Kanban process, collaborating with team members to define and optimize workflows and facilitated knowledge sharing sessions to improve team dynamics and give developers more visibility into the team's larger goals/projects
+        \item Served as the team's policy risk manager, identifying and mitigating over 70\% of long-standing violations within 2 months
     \end{bullet-list-minor}
     \medskip
     
      \employer{Software Engineering Intern}{Amazon}{June  2021 -- August 2021}{}
-     \smallskip
 	\begin{bullet-list-minor}
-	\item Developed AWS Lambda to periodically retrieve
+	\item Implemented a Lambda to periodically retrieve
 	schema for 10,000+ catalog attributes and cache data in S3 for quick access
-    \item Designed UI with React query builder components to pull cached attributes and allow users to construct
-    complex SQL queries
-    \item Added usage metrics and access control for query builder to see how effective new features were for small groups of customers
+    \item Developed a query builder UI with React to pull cached attributes and help users construct complex SQL queries without error
+    \item Added usage metrics and access control for new UI to see how effectively it addressed customer issues about writing queries
     \end{bullet-list-minor}
     \medskip
     
     \employer{Software Engineering Intern}{Capital One}{June 2020 -- August 2020}{}
-    \smallskip
 	\begin{bullet-list-minor}
 	\item Engineered a dashboard  application with JavaScript and Flask to track software usage data over thousands of computers
 	\item Created API endpoints to retrieve results of company-wide database queries and format data to be used  in visualizations
     \end{bullet-list-minor}
     \medskip
-    \employer{Software Engineering Intern}{Capital One Tech Incubator}{June 2019 -- December 2019}{}
-    \smallskip
+    
+    \employer{Software Engineering Intern}{Capital One}{June 2019 -- December 2019}{}
 	\begin{bullet-list-minor}
 	\item Wrote Python scripts in Jupyter Lab to process 2,000+  cybersecurity events and find patterns indicating suspicious behavior
 	\item Redesigned language processing and data visualization app interface to be more intuitive and user-friendly using C3.js
     \end{bullet-list-minor}
-\bigskip
+\medskip
+
+\header{Technical Skills}
+    \vspace{4pt}
+    \textbf{Programming Languages}: \hspace{3pt} \cvtag{Java}\hspace{3pt}\cvtag{Python}\hspace{3pt}\cvtag{C}\hspace{3pt}\cvtag{HTML}\cvtag{CSS}\hspace{3pt}\cvtag{JavaScript}\\
+    \vspace{4pt}
+    \textbf{Technologies}: \hspace{3pt} \cvtag{Git}\hspace{3pt}\cvtag{Mockito}\hspace{3pt}\cvtag{Lombok}\hspace{3pt}\cvtag{Smithy}\hspace{3pt}\cvtag{Keras}\hspace{3pt}\cvtag{Pandas}\hspace{3pt}\cvtag{Flask}\hspace{3pt}\cvtag{Node.js}\hspace{3pt}\cvtag{jQuery}\hspace{3pt}\cvtag{AWS}\hspace{3pt}\cvtag{React}
+
+\smallskip
+\medskip
+
+\header{Education}
+    \vspace{4pt}
+    \school{University of Maryland, College Park}{}{August 2018 -- May 2022}{\vspace{4pt}  B.S. in Computer Science with Business Analytics Minor \labelitemi Magna Cum Laude}
+
+
 \medskip
 
 \header{Projects}
-    \vspace{6pt}
+    \vspace{4pt}
     \project{Moodbird Satisfaction Dashboard}{}{}{}
     \smallskip
 	\begin{bullet-list-minor} 
@@ -188,16 +191,18 @@ $\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
 	\item Project placed in the Top 3 out of 10 teams at the Capital One Software Engineering Summit Hackathon
     \end{bullet-list-minor}
     \medskip
-    \project{jSearch Web Application}{}{}{}
-    \smallskip
-	\begin{bullet-list-minor}
-	\item Deployed an application on Heroku to allow users to search for 100,000+ archived Jeopardy questions based on responsive filters created with jQuery and mark certain questions as favorites so that they can be saved and returned to in another session
-    \end{bullet-list-minor}
-    \medskip    
+    
     \project{Machine Learning Stock Predictor}{}{}{}
     \smallskip
 	\begin{bullet-list-minor}
 	\item Implemented a web application tool to retrieve and pre-process a company's historical stock data with Pandas, train a neural network created with Keras, and display line graphs of the model's predictions after each epoch of training with C3.js
+    \end{bullet-list-minor}
+    \medskip  
+    
+
+    \project{jSearch Web Application}{}{}{}
+	\begin{bullet-list-minor}
+	\item Deployed an application on Heroku to allow users to search for 100,000+ archived Jeopardy questions based on responsive filters created with jQuery and mark certain questions as favorites so that they can be saved and returned to in another session
     \end{bullet-list-minor}
 
 \end{document}
