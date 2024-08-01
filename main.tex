@@ -120,22 +120,21 @@ $\vcenter{\hbox{\tiny$\bullet$}}$\hspace*{-3pt}
     \vspace{4pt}
     \employer{Software Development Engineer}{Amazon}{August 2022 -- PRESENT}{}
 	\begin{bullet-list-minor}
-        \item Designed and developed an experimental validator in Java to create curated detail pages for high-value Amazon sellers that protected 1,400+ item families from instability and reduced catalog churn for the initial selected selling partners by over 45\%
-        \item Documented the validator's behavior by writing an integration test suite to cover complex cases and added queryable logs through SQL and AWS Athena to monitor its effects on Amazon's catalog, as well as dashboards to track its performance
-        \item Engineered a new Java service using AWS CDK and Smithy to enrich seller product submissions with package hierarchies
-        \item Authored detailed documentation, runbooks, test and launch strategies, and dashboards for my team's new service, enabling 6 other developers to quickly onboard to the project, collaborate effectively, and debug the service during on-call shifts
-        \item Implemented an asynchronous workflow to update cache entries by storing update requests in an AWS SQS queue and created documentation for monitoring the workflow/querying AWS CloudWatch logs to analyze traffic patterns and DLQ messages
-        \item Analyzed the root causes of test suite failures blocking production deployments across multiple teams over several months, and designed and executed a mitigation strategy to refactor/decouple test suites and reduce the test failure rates by over 50\%
+        \item Designed and developed an experimental validator in Java to create curated detail pages for high-value Amazon sellers that protected 1,400+ item families from instability and reduced catalog churn for the initial selected selling partners by about 45\%
+        \item Documented the validator's behavior by writing an integration test suite to cover complex cases and added queryable logs through SQL using AWS Athena to monitor its effects on Amazon's catalog, as well as metrics to track its performance
+        \item Implemented an asynchronous workflow to update cache entries by storing update requests in an AWS SQS queue and created procedures for monitoring the workflow and querying AWS CloudWatch logs to analyze traffic patterns and DLQ messages
         \item Automated my team's standard operating procedures by writing Python scripts to query databases/diagnostic tools and summarize results, enabling the on-call to complete root cause analyses and mitigation of high severity events within minutes
-        \item Led my team's Kanban process, tracking productivity metrics and collaborating with team members to address pain points/facilitate knowledge sharing sessions to give developers more visibility into the team's larger goals and projects
-        \item Served as team's policy risk manager, mitigating over 70\% of long-standing violations related to dead code within 3 months
+        \item Analyzed the root causes of test suite failures blocking deployments across multiple teams over several months, and wrote and executed a mitigation strategy to no-op unnecessary calls and decouple test suites, reducing the test failure rates by over 50\%
+        \item Led my team's Kanban process, tracking productivity metrics and collaborating with team members to address pain points and facilitate knowledge sharing sessions to give developers more visibility into the team's larger goals and projects
+        \item Acted as Operational Excellence Czar, tracking team support tickets, determining the common recurring root causes, and prioritizing project plans to resolve them permanently, reducing the average operational load of the team by roughly 30\%
+        \item Authored detailed documentation, runbooks, test and launch strategies, and dashboards for a new service, enabling 6 other developers to quickly onboard to the project, collaborate effectively, and debug the service during on-call rotations
     \end{bullet-list-minor}
     \medskip
     
      \employer{Software Development Engineer Intern}{Amazon}{June  2021 -- August 2021}{}
 	\begin{bullet-list-minor}
 	\item Implemented an AWS Lambda to periodically retrieve
-	schema for 10,000+ catalog attributes and cache data in S3
+	schema for 10,000+ catalog attributes and cache data in AWS S3
     \item Developed a query builder UI with React to pull cached attributes and help users construct complex SQL queries without error
     \item Added usage metrics and access control for new UI to see how effectively it addressed customer issues about writing queries
     \end{bullet-list-minor}
